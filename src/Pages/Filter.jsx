@@ -39,7 +39,7 @@ const Filter = () => {
   return (
     <div className="flex gap-8 pt-30 pb-12">
 
-      <div className="bg-[#0b0d12] p-8 w-100 shrink-0">
+      <div className="bg-[#0b0d12] p-8 md:w-50 lg:w-80 w-100 shrink-0">
         
 
         <div className="text-white flex justify-between mb-4">
@@ -52,7 +52,7 @@ const Filter = () => {
 
         <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2">
           <p className="text-stone uppercase text-xs mb-1">Sort by</p>
-          <div className="grid grid-cols-2 gap-2 p-2">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 p-2">
             {sorting.map((item, index) => (
               <div
                 key={index}
@@ -72,7 +72,7 @@ const Filter = () => {
 
         <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2">
           <p className="text-stone uppercase text-xs mb-1">Order</p>
-          <div className="grid grid-cols-2 gap-2 p-2">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 p-2">
             {["asc", "desc"].map((o) => (
               <div
                 key={o}
@@ -98,7 +98,7 @@ const Filter = () => {
      
 
 
-        <div className="bg-[#13151a] p-2 rounded-xl border border-stone mb-2">
+        <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2 mt-2">
           <p className="text-stone uppercase text-xs mb-1">Quality</p>
           <div className="grid grid-cols-2 gap-2 p-2">
             {qualities.map((q) => (
@@ -118,7 +118,7 @@ const Filter = () => {
         </div>
 
  
-        <div className="bg-[#13151a] p-2 rounded-xl border border-stone mb-2">
+        <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2">
           <p className="text-stone uppercase text-xs mb-1">
             Min Rating — <span className="text-gold">★ {minRate}</span>
           </p>

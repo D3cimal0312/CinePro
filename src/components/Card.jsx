@@ -54,7 +54,7 @@ const Card = ({
   
 
   return (
-    <div className="flex flex-wrap gap-x-5 text-stone gap-y-8 w-full justify-center">
+    <div className="flex flex-wrap gap-x-5 text-stone gap-y-8 w-full xl:justify-center">
       {posts.map((movie) => (
         <Link
           key={movie.id}
