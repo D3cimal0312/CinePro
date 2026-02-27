@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+#root{
+background-color: #080808;
+}
+
+.qbox {
+  bottom: 100px;
+  opacity: 0;
+  transition: all 200ms linear;  
+}
+
+.cardbase:hover .qbox {
+  bottom: 130px;
+  opacity: 1;                   
+}
+
+ .card_img {
+transform: scale();  
+  transition: all 200ms linear;  
+
+}
+.cardbase:hover .card_img {
+transform: scale(115%);  
+
+}
+
+@theme {
+  /* ── Fonts ── */
+  --font-playfair:    "Playfair Display", Georgia, serif;
+  --font-outfit:      Outfit, system-ui, sans-serif;
+  --font-jetbrains:   "JetBrains Mono", Menlo, monospace;
+
+  /* ── Colors ── */
+  --color-gold:       #d4a844;    /* text-gold        bg-gold        border-gold        */
+  --color-gold-light: #e8c96a;    /* text-gold-light   bg-gold-light   border-gold-light  */
+  --color-gold-dim:   #d4a84426;  /* text-gold-dim     bg-gold-dim     border-gold-dim    */
+
+  --color-stone:      #66605c;    /* text-stone        bg-stone        border-stone       */
+  --color-stone-light: #8a847f;   /* text-stone-light  bg-stone-light  border-stone-light */
+  --color-stone-dim:  #66605c26;  /* text-stone-dim    bg-stone-dim    border-stone-dim   */
+}
+
