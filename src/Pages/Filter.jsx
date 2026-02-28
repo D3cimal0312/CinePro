@@ -39,7 +39,7 @@ const Filter = () => {
   return (
     <div className="flex gap-8 pt-30 pb-12">
 
-      <div className="bg-[#0b0d12] p-8 md:w-50 lg:w-80 w-100 shrink-0">
+      <div className="bg-[#0b0d12] p-8 md:w-50 lg:w-95 shrink-0">
         
 
         <div className="text-white flex justify-between mb-4">
@@ -100,7 +100,7 @@ const Filter = () => {
 
         <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2 mt-2">
           <p className="text-stone uppercase text-xs mb-1">Quality</p>
-          <div className="grid grid-cols-2 gap-2 p-2">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 p-2">
             {qualities.map((q) => (
               <div
                 key={q}
@@ -153,7 +153,7 @@ const Filter = () => {
 
 </div>
 <div className="text-white w-full flex justify-center mt-12 font-playfair gap-8 text-2xl">
-  <button onClick={()=>(page===1)?"" : setPage(page-1)} className={`(page===1)? "text-stone-light scale-50":"" `}>◀</button>
+  <button onClick={()=>(page===1)?"" : setPage(page-1)} className={`${(page==1)? "text-stone-light scale-50":"" }`}>◀</button>
   <p className="text-4xl text-gold">{page}</p>
   <button onClick={()=>setPage(page+1)}>▶</button>
 

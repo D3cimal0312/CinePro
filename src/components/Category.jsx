@@ -40,7 +40,7 @@ const Category = ({ genre, setGenre }) => {
     );
 
   return (
-    <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-2">
+    <div className="grid md:grid-cols-1 lg:grid-cols-2 md:gap-x-8 xl:gap-x-16 gap-y-2">
       {genres.map((item, index) => (
         <div
           key={index}
