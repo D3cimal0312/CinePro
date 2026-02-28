@@ -29,7 +29,7 @@ const Filter = () => {
   const Reset = () => {
     setPage(1);
     setQuality("all");
-    setMinRate(0);
+    setMinRate(5);
     setGenre("all");
     setSortby("year");
     setOrderby("desc");

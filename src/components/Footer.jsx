@@ -12,7 +12,7 @@ const Footer = () => {
         <NavLink to="/" onClick={() => window.scrollTo(0, 0)} >Home</NavLink>
         <NavLink to="/browse" onClick={() => window.scrollTo(0, 0)} >Browse</NavLink>
         <NavLink to="/about"  onClick={() => window.scrollTo(0, 0)} >About</NavLink>
-            <div>Contact</div>
+           <a href="https://github.com/D3cimal0312"> <div>Contact</div> </a>
 
 
         </div>
