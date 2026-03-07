@@ -18,7 +18,7 @@ const Navbar = () => {
     }`;
 
   return (
-    <div className="grid grid-cols-2 items-center p-8 py-6 text-white fixed z-999 bg-[#0b0d12] w-screen border-b border-[#191c1f]">
+    <div className="grid grid-cols-2 items-center   px-8 md:px-20 py-6 text-white fixed z-999 bg-[#0b0d12] w-screen border-b border-[#191c1f]">
 
  <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
       <h1 className="text-3xl font-playfair">

@@ -33,6 +33,7 @@ const res = await fetch(`https://movies-api.accel.li/api/v2/list_movies.json?lim
   <div
     style={{ backgroundImage: `url('${item.large_cover_image}')` }}
     className={`sm:h-50 sm:w-25 lg:h-100 lg:w-75 bg-cover bg-center rounded-2xl md:-left-5 border-2 border-stone absolute z-2 hover:z-4 
+      
       ${index === 0 ? "md:rotate-20 md:left-25 sm:-left-32" : ""} 
       ${index === 1 ? "md:-left-30 md:-rotate-20 md:-top-10 sm:left-22" : ""} 
       hover:shadow-[5px_5px_30px_rgba(400,400,40,1)]
