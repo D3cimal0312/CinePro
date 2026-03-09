@@ -27,6 +27,7 @@ const Filter = () => {
 
 
   const Reset = () => {
+    setQuery("")
     setPage(1);
     setQuality("all");
     setMinRate(5);
@@ -49,7 +50,9 @@ const Filter = () => {
           </button>
         </div>
 
-
+        <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2">
+          <input type="text" className=" w-full border border-gold rounded-xl text-white placeholder:text-stone px-4 py-2 focus:outline-none focus:border-gold" placeholder="Search"  onChange={(e)=>setQuery(e.target.value)}/>
+</div>
         <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2">
           <p className="text-stone uppercase text-xs mb-1">Sort by</p>
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 p-2">
@@ -149,6 +152,7 @@ const Filter = () => {
           order_by={orderby}
           minimum_rating={minRate}
           genre={genre}
+          query={query}
         />
 
 </div>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../Pages/Land.css";
 import { Link } from "react-router-dom";
 import Microdetail from "./Microdetail";
-
+import Nodata from "../Pages/Nodata"
 const Card = ({
   limit = 20,
   page = 1,
@@ -11,6 +11,7 @@ const Card = ({
   genre = "all",
   sort_by = "year",
   order_by = "desc",
+  query="0"
 }) => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,7 +19,7 @@ const Card = ({
   
 
 
-  const fulllink = `https://movies-api.accel.li/api/v2/list_movies.json?limit=${limit}&page=${page}&quality=${quality}&minimum_rating=${minimum_rating}&sort_by=${sort_by}&order_by=${order_by}&genre=${genre}`;
+  const fulllink = `https://movies-api.accel.li/api/v2/list_movies.json?limit=${limit}&page=${page}&quality=${quality}&minimum_rating=${minimum_rating}&sort_by=${sort_by}&order_by=${order_by}&genre=${genre}&query_term=${query}`;
 
   useEffect(() => {
     setLoading(true);
@@ -48,6 +49,14 @@ const Card = ({
         <div className="w-10 h-10 border-2 border-[#66605c] border-t-[#d4a844] rounded-full animate-spin" />
       </div>
     );
+  }
+
+  if(posts.length===0){
+    return (
+      <div className="-mt-20">
+      <Nodata/>
+      </div>
+    )
   }
 
   

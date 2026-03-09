@@ -3,5 +3,3 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
-@import "mantine/core/styles.css";
-@import "mantine/carousel/styles.css";

@@ -29,7 +29,10 @@ const res = await fetch(`https://movies-api.accel.li/api/v2/list_movies.json?lim
   return (
 <div className='absolute'>
   {posts.map((item, index) => (
-<Link key={item.id} to={`movies/${item.id}`} className="absolute">
+<Link key={index}          
+ to={`/movies/${item.id}`}
+          onClick={() => window.scrollTo(0, 0)}
+           >
   <div
     style={{ backgroundImage: `url('${item.large_cover_image}')` }}
     className={`sm:h-50 sm:w-25 lg:h-100 lg:w-75 bg-cover bg-center rounded-2xl md:-left-5 border-2 border-stone absolute z-2 hover:z-4 
