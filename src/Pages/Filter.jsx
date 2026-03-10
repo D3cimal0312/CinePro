@@ -51,7 +51,7 @@ const Filter = () => {
         </div>
 
         <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2">
-          <input type="text" className=" w-full border border-gold rounded-xl text-white placeholder:text-stone px-4 py-2 focus:outline-none focus:border-gold" placeholder="Search"  onChange={(e)=>setQuery(e.target.value)}/>
+          <input type="text" className=" w-full border border-gold rounded-xl text-white placeholder:text-stone px-4 py-2 focus:outline-none focus:border-gold" placeholder="Search"  onChange={(e)=>setQuery(e.target.value)} value={query}/>
 </div>
         <div className="bg-[#13151a] p-2 rounded-xl border border-stone-dim mb-2">
           <p className="text-stone uppercase text-xs mb-1">Sort by</p>
